@@ -8,7 +8,6 @@ namespace TestGithubActions
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine($"Dont tell anybody, but {Environment.GetEnvironmentVariable("env_secret")}");
-);
         }
     }
 }
