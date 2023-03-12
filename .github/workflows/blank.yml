@@ -58,5 +58,5 @@ jobs:
         run: ls -R
 
       - name: run
-        run: dotnet ./runtheprogram
+        run: dotnet ./runtheprogram/TestGithubActions.dll
 
