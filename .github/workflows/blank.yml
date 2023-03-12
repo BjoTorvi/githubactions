@@ -27,7 +27,7 @@ jobs:
         run: dotnet build
         
       - name: list files
-        run: ln -R
+        run: ls -R
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
@@ -55,7 +55,7 @@ jobs:
           path: runtheprogram
 
       - name: list files
-        run: ln -R
+        run: ls -R
 
       - name: run
         run: dotnet ./runtheprogram
