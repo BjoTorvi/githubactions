@@ -56,7 +56,12 @@ jobs:
 
       - name: list files
         run: ls -R
-
+      - name: Vis secret
+        run: echo "Dont tell anybody but ${{secrets.MY_SECRET}}"
+      - name: Vis variable
+        run: echo "Did you know that ${{vars.FUNFACT}}"
       - name: run
+        env:
+          env_secret: ${{secrets.MY_SECRET}}
         run: dotnet ./runtheprogram/TestGithubActions.dll
 
